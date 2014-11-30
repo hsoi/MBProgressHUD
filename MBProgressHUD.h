@@ -348,7 +348,7 @@ typedef void (^MBProgressHUDCompletionBlock)();
  * The corner radius for the HUD
  * Defaults to 10.0
  */
-@property (assign) float cornerRadius;
+@property (atomic, assign) float cornerRadius;
 
 /** 
  * Cover the HUD background view with a radial gradient. 
@@ -397,7 +397,7 @@ typedef void (^MBProgressHUDCompletionBlock)();
 /**
  * Color to be used for the main label. Set this property if the default is not adequate.
  */
-@property (MB_STRONG) UIColor* labelColor;
+@property (atomic, MB_STRONG) UIColor* labelColor;
 
 /**
  * Font to be used for the details label. Set this property if the default is not adequate.
@@ -407,13 +407,13 @@ typedef void (^MBProgressHUDCompletionBlock)();
 /** 
  * Color to be used for the details label. Set this property if the default is not adequate.
  */
-@property (MB_STRONG) UIColor* detailsLabelColor;
+@property (atomic, MB_STRONG) UIColor* detailsLabelColor;
 
 /**
  * The color of the activity indicator. Defaults to [UIColor whiteColor]
  * Does nothing on pre iOS 5.
  */
-@property (MB_STRONG) UIColor *activityIndicatorColor;
+@property (atomic, MB_STRONG) UIColor *activityIndicatorColor;
 
 /** 
  * The progress of the progress indicator, from 0.0 to 1.0. Defaults to 0.0. 
